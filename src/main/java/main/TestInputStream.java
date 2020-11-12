@@ -11,6 +11,7 @@ import java.io.InputStream;
  */
 public class TestInputStream {
     public static void main(String args[]) throws IOException {
+        System.out.println(System.currentTimeMillis()/1000);
         InputStream in = System.in;
         int a = in.read();
         System.out.println("1-->:" + a);

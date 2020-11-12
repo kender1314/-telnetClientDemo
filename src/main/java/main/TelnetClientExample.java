@@ -95,7 +95,7 @@ public class TelnetClientExample implements Runnable, TelnetNotificationHandler 
 			try {
 				tc.connect(remoteip, remoteport);
 				System.out.println("telnet是否可以获得：" + tc.isAvailable());
-				System.out.println("telnet是否连接成功：" + tc.isAvailable());
+				System.out.println("telnet是否连接成功：" + tc.isConnected());
 
 				final Thread reader = new Thread(new TelnetClientExample());
 				tc.registerNotifHandler(new TelnetClientExample());
